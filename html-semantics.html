@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Blank slides</title>
+
+    <link href="https://inspirejs.org/inspire.css" rel="stylesheet" />
+    <link href="theme.css" rel="stylesheet" />
+    <link href="html-semantics.css" rel="stylesheet" />
+</head>
+
+<body class="language-markup" data-prism-plugins="normalize-whitespace">
+
+    <header id="intro" class="slide">
+        <!-- <div class="logo logo">
+        </div> -->
+        <div class="donut">
+            <picture class="image-wrapper">
+                <img class="image doughnut-clipping" src="/assests/images/plane.jpg" alt="Nationale Bioscoopbon case">
+            </picture>
+            <svg class="donuts-svg" xmlns="http://www.w3.org/2000/svg" width="0" ,="" height="0">
+                <clipPath id="doughnut-path" clipPathUnits="objectBoundingBox" transform="scale(0.00133, 0.00123)">
+                    <path
+                        d="M 1.7745 354.9 a 354.9 354.9 90 1 1 709.8 0 a 354.9 354.9 90 1 1 -709.8 0 Z M 204.0675 354.9 a 39.039 39.039 90 1 1 292.7925 1.7745 A 39.039 39.039 90 1 1 204.0675 354.9 z"
+                        clip-rule="evenodd"></path>
+                </clipPath>
+            </svg>
+
+        </div>
+        <div class="logo logo-header"></div>
+
+        <p class="small-text">DotControl</p>
+        <h1 class="heading">
+            HTML Semantics &amp; <br />CSS Grid
+        </h1>
+    </header>
+    <section>
+        <article class="slide" title="Inspire.js: Introduction">
+            <div class="logo">
+            </div>
+
+            <p class="small-text">Game time</p>
+            <h1 class="heading">
+                How am I
+            </h1>
+            <div class="game-list-wrapper delayed-children">
+                <ul class="game-list">
+                    <li>
+                        <img src="/assets/images/game1.jpg" alt="Game 1">
+                        <p>Game 1 Description</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/game2.jpg" alt="Game 2">
+                        <p>Game 2 Description</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/game3.jpg" alt="Game 3">
+                        <p>Game 3 Description</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/game4.jpg" alt="Game 4">
+                        <p>Game 4 Description</p>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+    </section>
+
+    <section>
+        <article class="slide" title="Inspire.js: Introduction">
+            <h1>Main idea</h1>
+
+            <ul class="delayed-children">
+                <li>An HTML file contains the whole presentation</li>
+                <li>Themes as CSS files</li>
+                <li>Plugins for extra functionality, autoloaded when used</li>
+                <li>Nice JavaScript API for really custom things</li>
+            </ul>
+        </article>
+
+        <article class="slide">
+            <h1>History</h1>
+            <ul>
+                <li>Originally created in 2010 for my first talk, at <a href="http://front-trends.com">Front Trends
+                        2010</a></li>
+                <li>By popular demand, it was released shortly after, named CSSS</li>
+                <li>Huge refactor and renaming to Inspire.js in Sep 2018</li>
+            </ul>
+        </article>
+
+        <article class="slide">
+            <h1>Syntax</h1>
+
+            <ul>
+                <li>Slides are defined by adding the <code>slide</code> class to any elements.</li>
+                <li><code>&lt;header class="slide"></code> is a header slide (relevant for the <a
+                        href="#overview">Overview</a>)</li>
+            </ul>
+        </article>
+
+        <article class="slide" id="navigation">
+            <h1>Keyboard Navigation</h1>
+            <ul>
+                <li><kbd>→</kbd> or <kbd>↓</kbd> to advance to the next slide or incrementally displayed item</li>
+                <li><kbd>←</kbd> or <kbd>↑</kbd> to go to the previous slide or incrementally displayed item</li>
+                <li><kbd>Ctrl</kbd><kbd>→</kbd> or <kbd>Ctrl</kbd><kbd>↓</kbd> to jump to the next slide</li>
+                <li><kbd>Ctrl</kbd><kbd>←</kbd> or <kbd>Ctrl</kbd><kbd>↑</kbd> to jump to the previous slide</li>
+                <li>Home to go to the first slide, End to go to the last</li>
+                <li><kbd>Ctrl</kbd><kbd>G</kbd> to jump to an arbitrary slide (by slide number or identifier)</li>
+                <li class="delayed">
+                    Note that if a slide contains an <code>&lt;iframe</code>, when the content in the iframe is focused,
+                    Inspire.js shortcuts will not work.
+                    There is no way around that, you need to click on something from the actual slide to get focus out
+                    of the iframe before you use any Inspire.js keyboard shortcuts.
+                    Some plugins (e.g. live demo) add on-screen "Next" buttons for this reason.
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <script src="https://inspirejs.org/inspire.mjs" type="module"></script>
+
+</body>
+
+</html>

@@ -2,13 +2,52 @@
 @import url("style/components/index.css");
 
 :root {
-	--font-mono: Consolas, Monaco, 'Andale Mono', monospace;
-	--font-sans: 'Helvetica Neue', Helvetica, Segoe UI, sans-serif;
+	/* --font-mono: Consolas, Monaco, 'Andale Mono', monospace; */
+	/* --font-sans: 'Helvetica Neue', Helvetica, Segoe UI, sans-serif; */
+	--font-sans: 'Galano Grotesque', sans-serif;
+
+	/* $color-white: #fff;
+$color-off-white: #efefef;
+$color-black: #0d0d0d;
+$color-primary: #ff2345;
+$color-gray: #cacaca;
+$color-blue: #2345ff;
+$color-gray-dark: #171717;
+$color-gray-medium: #737373;
+$color-gray-light: #f0f0f0;
+$color-gold: #b48f37; */
+
+	--color-white: #fff;
+	--color-off-white: #efefef;
+	--color-black: #0d0d0d;
+	--color-primary: #ff2345;
+	--color-gray: #cacaca;
+	--color-blue: #2345ff;
+	--color-gray-dark: #171717;
+	--color-gray-medium: #737373;
+	--color-gray-light: #f0f0f0;
+	--color-gold: #b48f37;
+	--color-accent-1: #ff2345;
+	--color-accent-2: #2345ff;
+	--color-orange: #ff7f00;
+	--color-green: #00ff00;
+	--color-purple: #ff00ff;
+	--color-yellow: #ffff00;
+	--color-cyan: #00ffff;
+	--color-magenta: #ff00ff;
+
+
+	--color-accent-1: var(--color-primary);
+	--color-accent-2: var(--color-primary);
+	--color-accent-3: var(--color-gold);
+	--color-accent-4: var(--color-magenta);
 }
+
 
 .slide {
 	color-scheme: dark;
-	--background-color-overlay: hsl(200 20% 50% / 30%);
+	/* --background-color-overlay: hsl(200 20% 50% / 30%); */
+	--background-color-overlay: var(--color-gray-dark);
 	background: radial-gradient(transparent, rgb(0 0 0 / .7)), linear-gradient(var(--background-color-overlay) 0 100%) canvas;
 
 	h2 {
@@ -18,7 +57,7 @@
 }
 
 /* Tables */
-.slide > table {
+.slide>table {
 	caption {
 		letter-spacing: -.05em;
 		color: var(--color-orange);
@@ -28,7 +67,7 @@
 		background: var(--color-accent-1);
 	}
 
-	tbody tr > * {
+	tbody tr>* {
 		border-top-color: hsla(0 0% 100% / 15%);
 	}
 
