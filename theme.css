@@ -41,6 +41,8 @@ $color-gold: #b48f37; */
 	--color-accent-2: var(--color-primary);
 	--color-accent-3: var(--color-gold);
 	--color-accent-4: var(--color-magenta);
+
+	--background: var(--color-gray-dark);
 }
 
 

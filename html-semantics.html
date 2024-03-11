@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Blank slides</title>
+    <title>HTML Semantics &amp; CSS Grid</title>
 
     <link href="https://inspirejs.org/inspire.css" rel="stylesheet" />
     <link href="theme.css" rel="stylesheet" />
@@ -12,10 +12,17 @@
 </head>
 
 <body class="language-markup" data-prism-plugins="normalize-whitespace">
-
     <header id="intro" class="slide">
         <!-- <div class="logo logo">
         </div> -->
+
+        <div class="logo logo-header"></div>
+        <div class="hero">
+            <p class="small-text">DotControl</p>
+            <h1 class="heading">
+                HTML Semantics &amp; <br />CSS Grid
+            </h1>
+        </div>
         <div class="donut">
             <picture class="image-wrapper">
                 <img class="image doughnut-clipping" src="/assests/images/plane.jpg" alt="Nationale Bioscoopbon case">
@@ -27,43 +34,381 @@
                         clip-rule="evenodd"></path>
                 </clipPath>
             </svg>
-
         </div>
-        <div class="logo logo-header"></div>
-
-        <p class="small-text">DotControl</p>
-        <h1 class="heading">
-            HTML Semantics &amp; <br />CSS Grid
-        </h1>
     </header>
+
+
+    <section>
+        <header class="slide chapter">
+            <h1>What we will cover</h1>
+        </header>
+        <article class="slide" title="we will cover">
+            <div class="logo">
+            </div>
+            <p class="small-text">HTML Semantics and CSS Grid</p>
+            <div class="content">
+                <h1>We will cover</h1>
+                <ul class="content-list delayed-children">
+                    <li>What is HTML Semantics</li>
+                    <li>Why is it important</li>
+                    <li>Semantic Structure and Semantic Text</li>
+                    <li>Welcome CSS Grid</li>
+                    <li>Wrap up</li>
+                </ul>
+                <figure class="content-image">
+                    <img src="/assests/images/html-programmer.jpg" alt="HTML">
+                </figure>
+            </div>
+        </article>
+
+    </section>
+    <section>
+        <header class="slide chapter">
+            <h1>But, lets start with a game</h1>
+        </header>
+
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo">
+            </div>
+            <p class="small-text">What is HTML Semantics</p>
+            <div class="content">
+                <h1>Lets start with a game</h1>
+
+                <ul class="game-list delayed-children">
+                    <li class="first-game-list-item">
+                        Guess the character
+                    </li>
+
+                    <li>
+                        <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Game 1">
+                    </li>
+                    <li>
+                        <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Game 2">
+                    </li>
+                    <li>
+                        <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Game 3">
+                    </li>
+                </ul>
+                <ul class="game-list game-list-full delayed">
+                    <li>
+                        <p>
+                            Did you guess correctly?
+                            <strong>It's a developer</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="/assests/images/developer.jpg" alt="Game 4">
+                    </li>
+                    <li>
+                        <img src="/assests/images/developer.jpg" alt="Game 4">
+                    </li>
+                    <li>
+                        <img src="/assests/images/developer.jpg" alt="Game 4">
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+
+    </section>
+    <section>
+        <header class="slide chapter">
+            <h1>Know your <span class="accent">semantics</span></h1>
+        </header>
+
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo">
+            </div>
+            <p class="small-text">Defining HTML Semantics</p>
+            <div class="content-with-image">
+                <div class="content-text">
+                    <p>
+                        Semantics
+                    </p>
+                    <p class="delayed">
+                        the branch of linguistics and logic concerned with <span class="accent">meaning</span>.
+                    </p>
+
+                </div>
+                <figure class="content-image">
+                    <img src="https://gifdb.com/images/high/phil-hartman-that-s-just-sick-z6bie0u5b33j3v09.gif"
+                        alt="Meaning">
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo">
+            </div>
+            <p class="small-text">Defining HTML Semantics</p>
+            <div class="content-with-image">
+                <div class="content-text">
+                    <p>
+                        The same word
+                    </p>
+                    <p class="delayed">
+                        can have a <span class="accent">different meaning</span>
+                    </p>
+                    <p class="delayed">
+                        depending on the context
+                    </p>
+
+                </div>
+                <figure class="content-image">
+                    <img src="https://c.tenor.com/zil-Wov0p-EAAAAd/thats-so-sick-william-newberry-v.gif" alt="Meaning">
+                </figure>
+            </div>
+        </article>
+
+    </section>
+    <section>
+        <header class="slide chapter">
+            <h1>Lets Swith now to <span class="accent">HTML</span></h1>
+        </header>
+        <article class="slide" title="What is HTML Semantics">
+
+            <div class="logo">
+            </div>
+            <p class="small-text">What is HTML</p>
+            <div class="content-with-image">
+                <div class="content-text">
+                    <p>
+                        Just like a Marker
+                    </p>
+                    <p>
+                        We use to emphasize parts of a page
+                    </p>
+                    <p class="delayed">
+                        and try to give it a <span class="accent">meaning</span>
+                    </p>
+                </div>
+                <figure class="content-image">
+                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
+                    <img src="/assests/images/html-idea.webp" alt="Meaning">
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+
+            <div class="logo">
+            </div>
+            <p class="small-text">What is HTML</p>
+            <div class="content-with-image">
+                <div>
+                    <p>
+                        <span class="">Markup language</span>
+                    </p>
+                </div>
+                <figure class="content-image">
+                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
+                    <img src="/assests/images/html-document.jpg" alt="Meaning">
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+
+            <div class="logo">
+            </div>
+            <p class="small-text">What is HTML</p>
+            <div class="content-with-image">
+                <div>
+                    <p>
+                        HTML stands for <span class="accent">'HyperText Markup Language'</span>
+                    </p>
+                </div>
+                <figure class="content-image">
+                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
+                    <img src="/assests/images/html-document.jpg" alt="Meaning">
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo">
+            </div>
+            <p class="small-text">HTML Origin</p>
+            <div class="content-with-image">
+                <dl class="data-list delayed-children">
+                    <dt>Creator</dt>
+                    <dd>Tim Berners-Lee</dd>
+                    <dt>The year</dt>
+                    <dd>first introduced in 1991, first introduced</dd>
+                    <dt>Developed at</dt>
+                    <dd>CERN (European Organization for Nuclear Research)</dd>
+                </dl>
+                <figure class="content-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/CERN_Globe_of_Science_and_Innovation.jpg/1280px-CERN_Globe_of_Science_and_Innovation.jpg"
+                        alt="Meaning">
+                    <figcaption>The Globe of Science and Innovation at CERN</figcaption>
+                </figure>
+            </div>
+        </article>
+    </section>
+    <section>
+        <header class="slide chapter">
+            <h1>HTML Semantics,<br /> Lets give text<span class="accent">meaning</span></h1>
+        </header>
+        <article class="demo slide" id="livedemo">
+            <textarea class="language-html">
+                <div class="semantic-structure">
+                    <header>
+                        <h1>Header: Semantic Structure</h1>
+                        <nav>Navigation</nav>
+                    </header>
+                    <aside>
+                        <h2>Aside: extra info</h2>
+                    </aside>
+                    <main>
+                        <h2>Main: Main content</h2>
+                    </main>
+                    <footer>
+                        <h2>Footer: Footer</h2>
+                    </footer>
+                </div>
+            </textarea>
+            <textarea class="language-css">
+                .semantic-structure {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+                    grid-template-rows: 1fr repeat(4,1fr) 1fr; 
+                    grid-template-areas: 
+                        "header header header"
+                        "aside main main"
+                        "aside main main"
+                        "footer footer footer";
+                }
+                header {
+                    background: rgba(0,0,100,0.3); /* Kept original background */
+                    grid-area: header;
+                    background-color: var(--color-primary); /* Theme primary color for header */
+                }
+                <!-- nav {
+                    grid-area: nav;
+                    background-color: var(--color-green); /* Theme green color for nav */
+                } -->
+                main {
+                    grid-area: main;
+                    background-color: var(--color-blue); /* Theme blue color for main */
+                }
+                aside {
+                    grid-area: aside;
+                    background-color: var(--color-yellow); /* Theme yellow color for aside */
+                }
+                footer {
+                    grid-area: footer;
+                    background-color: var(--color-magenta); /* Theme magenta color for footer */
+                }
+            </textarea>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo">
+            </div>
+            <p class="small-text">HTML Semantics</p>
+            <div class="content">
+                <h1>HTML Semantics</h1>
+                <ul class="content-list delayed-children">
+                    <li>HTML5 introduced a more precise way to define the meaning of content</li>
+                    <li>It introduced a lot of new elements</li>
+                    <li>It also redefined some existing elements</li>
+                    <li>It also removed some elements</li>
+                </ul>
+                <figure class="content-image">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5">
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo">
+            </div>
+            <p class="small-text">HTML Semantics</p>
+            <div class="content">
+                <h1>HTML Semantics</h1>
+                <ul class="content-list delayed-children">
+                    <li>HTML5 introduced a more precise way to define the meaning of content</li>
+                    <li>It introduced a lot of new elements</li>
+                    <li>It also redefined some existing elements</li>
+                    <li>It also removed some elements</li>
+                </ul>
+                <figure class="content-image">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5">
+                </figure>
+            </div>
+        </article>
+
+
+        <!-- <article class="slide">
+            <h1>History</h1>
+            <ul>
+                <li>Originally created in 2010 for my first talk, at <a href="http://front-trends.com">Front Trends
+                        2010</a></li>
+                <li>By popular demand, it was released shortly after, named CSSS</li>
+                <li>Huge refactor and renaming to Inspire.js in Sep 2018</li>
+            </ul>
+        </article>
+
+        <article class="slide">
+            <h1>Syntax</h1>
+
+            <ul>
+                <li>Slides are defined by adding the <code>slide</code> class to any elements.</li>
+                <li><code>&lt;header class="slide"></code> is a header slide (relevant for the <a
+                        href="#overview">Overview</a>)</li>
+            </ul>
+        </article>
+
+        <article class="slide" id="navigation">
+            <h1>Keyboard Navigation</h1>
+            <ul>
+                <li><kbd>→</kbd> or <kbd>↓</kbd> to advance to the next slide or incrementally displayed item</li>
+                <li><kbd>←</kbd> or <kbd>↑</kbd> to go to the previous slide or incrementally displayed item</li>
+                <li><kbd>Ctrl</kbd><kbd>→</kbd> or <kbd>Ctrl</kbd><kbd>↓</kbd> to jump to the next slide</li>
+                <li><kbd>Ctrl</kbd><kbd>←</kbd> or <kbd>Ctrl</kbd><kbd>↑</kbd> to jump to the previous slide</li>
+                <li>Home to go to the first slide, End to go to the last</li>
+                <li><kbd>Ctrl</kbd><kbd>G</kbd> to jump to an arbitrary slide (by slide number or identifier)</li>
+                <li class="delayed">
+                    Note that if a slide contains an <code>&lt;iframe</code>, when the content in the iframe is focused,
+                    Inspire.js shortcuts will not work.
+                    There is no way around that, you need to click on something from the actual slide to get focus out
+                    of the iframe before you use any Inspire.js keyboard shortcuts.
+                    Some plugins (e.g. live demo) add on-screen "Next" buttons for this reason.
+                </li>
+            </ul>
+        </article>
+    </section>
     <section>
         <article class="slide" title="Inspire.js: Introduction">
             <div class="logo">
             </div>
 
             <p class="small-text">Game time</p>
-            <h1 class="heading">
-                How am I
-            </h1>
-            <div class="game-list-wrapper delayed-children">
-                <ul class="game-list">
-                    <li>
-                        <img src="/assets/images/game1.jpg" alt="Game 1">
-                        <p>Game 1 Description</p>
-                    </li>
-                    <li>
-                        <img src="/assets/images/game2.jpg" alt="Game 2">
-                        <p>Game 2 Description</p>
-                    </li>
-                    <li>
-                        <img src="/assets/images/game3.jpg" alt="Game 3">
-                        <p>Game 3 Description</p>
-                    </li>
-                    <li>
-                        <img src="/assets/images/game4.jpg" alt="Game 4">
-                        <p>Game 4 Description</p>
-                    </li>
-                </ul>
+            <div>
+                <h1 class="heading">
+                    Guess the character
+                </h1>
+                <div class="game-list-wrapper delayed-children">
+                    <ul class="game-list">
+                        <li>
+                            <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Game 1">
+                        </li>
+                        <li>
+                            <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Game 2">
+                        </li>
+                        <li>
+                            <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Game 3">
+                        </li>
+                        <li>
+                            <img src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600assets/images/game4.jpg"
+                                alt="Game 4">
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
         </article>
@@ -118,7 +463,7 @@
                     Some plugins (e.g. live demo) add on-screen "Next" buttons for this reason.
                 </li>
             </ul>
-        </article>
+        </article> -->
     </section>
 
     <script src="https://inspirejs.org/inspire.mjs" type="module"></script>
