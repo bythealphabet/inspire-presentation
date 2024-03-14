@@ -24,7 +24,8 @@
         </div>
         <div class="donut">
             <picture class="image-wrapper">
-                <img class="image doughnut-clipping" src="./assests/images/plane.jpg" alt="Nationale Bioscoopbon case" />
+                <img class="image doughnut-clipping" src="./assests/images/plane.jpg"
+                    alt="Nationale Bioscoopbon case" />
             </picture>
             <svg class="donuts-svg" xmlns="http://www.w3.org/2000/svg" width="0" ,="" height="0">
                 <clipPath id="doughnut-path" clipPathUnits="objectBoundingBox" transform="scale(0.00133, 0.00123)">
@@ -46,10 +47,11 @@
             <div class="content">
                 <h1>We will cover</h1>
                 <ul class="content-list delayed-children">
-                    <li>What is HTML Semantics</li>
+                    <li>What is HTML, Semantics</li>
                     <li>Why is it important</li>
                     <li>Semantic Structure and Semantic Text</li>
-                    <li>Welcome CSS Grid</li>
+                    <li>We Welcome CSS Grid, </li>
+                    <li class="delayed accent">Why CSS Grid is awesome</li>
                     <li>Wrap up</li>
                 </ul>
                 <figure class="content-image">
@@ -58,7 +60,7 @@
             </div>
         </article>
     </section>
-    <section>
+    <!-- <section>
         <header class="slide chapter">
             <h1>But, lets start with a game</h1>
         </header>
@@ -104,22 +106,31 @@
                 </ul>
             </div>
         </article>
-    </section>
+    </section> -->
     <section>
         <header class="slide chapter">
-            <h1>Know your <span class="accent">semantics</span></h1>
+            <h1>Semantics</h1>
         </header>
+
+        <article class="slide" title="a story about semantics">
+            <div class="logo"></div>
+            <p class="small-text">Semantics?</p>
+            <div class="content">
+                <h3 class="item-center">What is the difference between</h3>
+                <div class="story item-center">
+                    <p class="">Sick</p>
+                    <p>and</p>
+                    <p class="">Siiick!!?</p>
+                </div>
+            </div>
+        </article>
 
         <article class="slide" title="What is HTML Semantics">
             <div class="logo"></div>
-            <p class="small-text">Defining HTML Semantics</p>
+            <p class="small-text">Defining Semantics</p>
             <div class="content-with-image">
                 <div class="content-text">
-                    <p>Semantics</p>
-                    <p class="delayed">
-                        the branch of linguistics and logic concerned with
-                        <span class="accent">meaning</span>.
-                    </p>
+                    <p>If you don't know the Context it was used in</p>
                 </div>
                 <figure class="content-image">
                     <img src="https://gifdb.com/images/high/phil-hartman-that-s-just-sick-z6bie0u5b33j3v09.gif"
@@ -127,9 +138,10 @@
                 </figure>
             </div>
         </article>
+
         <article class="slide" title="What is HTML Semantics">
             <div class="logo"></div>
-            <p class="small-text">Defining HTML Semantics</p>
+            <p class="small-text">Defining Semantics</p>
             <div class="content-with-image">
                 <div class="content-text">
                     <p>The same word</p>
@@ -144,8 +156,19 @@
                 </figure>
             </div>
         </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">Defining Semantics</p>
+            <div class="content">
+                <div class="story item-center">
+                    <p>Semantics is the study of the <span class="accent">meaning</span> of words</p>
+                </div>
+            </div>
+
+        </article>
     </section>
-    <section>
+
+    <!-- <section>
         <header class="slide chapter">
             <h1><span class="accent">HTML</span></h1>
         </header>
@@ -154,30 +177,14 @@
             <p class="small-text">What is HTML</p>
             <div class="content-with-image">
                 <div class="content-text">
-                    <p>Just like a Marker</p>
-                    <p>We use to emphasize parts of a page</p>
-                    <p class="delayed">
-                        and try to give it a <span class="accent">meaning</span>
+                    <p>Just like a <span class="accent">Marker</span></p>
+                    <p>We use to <span class="accent">emphasize</span> parts of a page</p>
+                    <p class="">
+                        and try to give the text <span class="accent">meaning</span>
                     </p>
                 </div>
                 <figure class="content-image">
-                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
                     <img src="./assests/images/html-idea.webp" alt="Meaning" />
-                </figure>
-            </div>
-        </article>
-        <article class="slide" title="What is HTML Semantics">
-            <div class="logo"></div>
-            <p class="small-text">What is HTML</p>
-            <div class="content-with-image">
-                <div>
-                    <p>
-                        <span class="">Markup language</span>
-                    </p>
-                </div>
-                <figure class="content-image">
-                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
-                    <img src="./assests/images/html-document.jpg" alt="Meaning" />
                 </figure>
             </div>
         </article>
@@ -192,7 +199,6 @@
                     </p>
                 </div>
                 <figure class="content-image">
-                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
                     <img src="./assests/images/html-document.jpg" alt="Meaning" />
                 </figure>
             </div>
@@ -201,7 +207,7 @@
             <div class="logo"></div>
             <p class="small-text">HTML Origin</p>
             <div class="content-with-image">
-                <dl class="data-list delayed-children">
+                <dl class="data-list">
                     <dt>Creator</dt>
                     <dd>Tim Berners-Lee</dd>
                     <dt>The year</dt>
@@ -216,7 +222,186 @@
                 </figure>
             </div>
         </article>
-        <article class="demo slide" id="livedemo">
+
+    </section> -->
+    <section>
+        <header class="slide chapter">
+            <h1>HTML <span class="accent">Semantics</span></h1>
+        </header>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">HTML Semantics</p>
+            <div class="content">
+                <div class="story item-center">
+                    <p>We use HTML to give <span class="accent">meaning</span> and <span class="accent">structure</span>
+                        to our content</p>
+
+        </article>
+
+        <article class="demo slide">
+            <textarea class=" language-html">
+            The Adventures of Coding Cat Whiskers
+            Adapted from
+            Coding Cat Adventures
+
+            Cat Stories:
+            Once upon a time in a land of laptops and code,
+            there lived a mischievous cat that
+            loved milk and H2O named Whiskers.
+            Whiskers, a coding cat, built websites with HTML,
+            styled them with CSS,
+            and added interactive elements with JavaScript.
+
+            Whiskers' Favorite Quote:
+            Meow
+
+            Tools of the Trade.
+            HTML: structure
+            CSS: styling
+            JavaScript: interactivity
+
+            Published on 2022-01-01
+            Follow us on Social Media
+            </textarea>
+        </article>
+
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">What is HTML</p>
+            <div class="content-with-image">
+                <div class="content-text">
+                    <p>Just like a <span class="accent">Marker</span></p>
+                    <p>We use to <span class="accent">emphasize</span> parts of a page</p>
+                    <p class="">
+                        and try to give the text <span class="accent">meaning</span>
+                    </p>
+                </div>
+                <figure class="content-image">
+                    <img src="./assests/images/html-idea.webp" alt="Meaning" />
+                </figure>
+            </div>
+        </article>
+
+        <!-- <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">HTML Semantics</p>
+            <div class="content">
+
+                <h1>The most used HTML tags</h1>
+
+                <dl class="content-list data-list">
+                    <dt><span class="accent tag">h1</span></dt>
+                    <dd>&lt;h1&gt;</dd>
+                    <dt><span class="accent tag">h2 to h6</span></dt>
+                    <dd>&lt;h2&gt; to &lt;h6&gt;</dd>
+                    <dt><span class="accent tag">p</span></dt>
+                    <dd>&lt;p&gt;</dd>
+                    <dt><span class="accent tag">a</span></dt>
+                    <dd>&lt;a&gt;</dd>
+                    <dt><span class="accent tag">ul</span></dt>
+                    <dd>&lt;ul&gt;</dd>
+                </dl>
+            </div>
+
+        </article> -->
+
+        <article class="demo slide" id="unsemantic-text">
+            <textarea class="language-html">
+               <div class="main">
+                    <h1 class="title">The Adventures of Coding Cat</h1>
+                    <div class="article">
+                        <div class="subtitle">Whiskers</div>
+                        <p class="paragraph">
+                            Adapted from 
+                            <span class="citation">
+                                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" class="link">Coding Cat Adventures</a>
+                            </span>
+                        </p>
+                        
+                        <p class="paragraph">
+                            <span class="emphasis">Cat Stories:</span>
+                            Once upon a time in a land of laptops and code, there lived a mischievous cat that loved milk and H<sub>2</sub>O named Whiskers. Whiskers, a coding cat, built websites with HTML, styled them with CSS, and added interactive elements with JavaScript.
+                        </p>
+                        <div class="blockquote">
+                            Whiskers' Favorite Quote:
+                            <div class="quote">Meow</div>
+                        </div>
+                        <div class="aside">
+                            <div class="subtitle">Tools of the Trade</div>
+                            <div class="definition-list">
+                                <div class="term">HTML</div>
+                                <div class="description">structure</div>
+                                <div class="term">CSS</div>
+                                <div class="description">styling</div>
+                                <div class="term">JavaScript</div>
+                                <div class="description">interactivity</div>
+                            </div>
+                        </div>
+                        
+                        <div class="footer">
+                            <div class="small">Published on 2022-01-01</div>
+                            <div class="address">
+                                <a href="#" class="social-link">Follow us on Social Media</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </textarea>
+            <textarea class="language-css">
+            .main, .article {
+                padding: 1rem;
+            }
+            
+            .title, .subtitle, .emphasis, .quote, .term, .description, .small {
+                display: inline;
+                color: var(--color-primary);
+            }
+            
+            .title {
+                font-size: 4rem;
+                line-height: 1;
+                margin-bottom: 2rem;
+            }
+            
+            .subtitle, .paragraph {
+                text-align: left;
+            }
+            
+            .subtitle {
+                color: var(--color-gold);
+                font-size: 1.8rem;
+            }
+            
+            .emphasis {
+                display: inline:
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            
+            .blockquote, .quote {
+                font-size: 1.5rem;
+            }
+            
+            .definition-list {
+                font-size: 1rem;
+                display: grid;
+                grid-template-columns: 50px 50px;
+                gap: 2rem;
+            }
+            
+            .paragraph {
+                color: var(--color-white);
+                font-size: 2rem;
+            }
+            
+            .small {
+                font-size: .8rem;
+            }
+                
+            </textarea>
+        </article>
+
+        <article class="demo slide" id="semantic-text">
             <textarea class="language-html">
                <main>
                     <h1>The Adventures of Coding Cat</h1>
@@ -225,7 +410,7 @@
                         <p>
                             Adapted from 
                             <cite>
-                                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Coding Cat Adventures</a></a>
+                                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Coding Cat Adventures</a>
                             </cite>
                         </p>
                         
@@ -259,238 +444,129 @@
                 </main> 
             </textarea>
             <textarea class="language-css">
-                main {
-                    padding: 2rem;
-                }
-
-                .a {
-                    height: 100%;
-                    border: 2px solid var(--color-primary);
-                    padding: 2rem;
-                    border-radius: 1rem;
-                }
-
-                h1, p, h2 {
-                    text-align: left;
-                }
-
-                h1,{
-                    color: var(--color-primary);
-                    font-size: 4rem;
-                    line-height: 1;
-                    margin-bottom: 2rem;
-                }
-
-                h2 {
-                    color: var(--color-gold);
-                    font-size: 1.8rem;
-                }
-
-                em {
-                    color: var(--color-primary);
-                    font-size: 2rem;
-                    font-weight: bold;
-                }
-
-                blockquote {
-                    color: var(--color-primary);
-                    font-size: 1.5rem;
-                }
-
-                dl {
-                    font-size: 1rem;
-
-                    display: grid;
-                    grid-template-columns: 50px 50px;
-                    gap: 2rem;
-                }
-
-                p {
-                    color: var(--color-white);
-                    font-size: 2rem;
-                }
-
-                cite {
-                    color: var(--color-primary);
-                    font-size: 1.5rem;
-                }
-
-                small {
-                    color: var(--color-primary);
-                    font-size: .8rem;
-                }
-
+            main, .article {
+            padding: 1rem;
+            }
+            
+            .a {
+            height: 100%;
+            border: 2px solid var(--color-primary);
+            border-radius: 1rem;
+            }
+            
+            h1, p, h2, em, blockquote, cite, small {
+            color: var(--color-primary);
+            }
+            
+            h1 {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 2rem;
+            }
+            
+            h2, p {
+            text-align: left;
+            }
+            
+            h2 {
+            color: var(--color-gold);
+            font-size: 1.8rem;
+            }
+            
+            em {
+            font-size: 2rem;
+            font-weight: bold;
+            }
+            
+            blockquote, cite {
+            font-size: 1.5rem;
+            }
+            
+            dl {
+            font-size: 1rem;
+            display: grid;
+            grid-template-columns: 50px 50px;
+            gap: 2rem;
+            }
+            
+            p {
+            color: var(--color-white);
+            font-size: 2rem;
+            }
+            
+            small {
+            font-size: .8rem;
+            }
                 
             </textarea>
         </article>
-        <article class="demo slide" id="livedemo">
-            <textarea class="language-html">
-                    The Adventures of Coding Cat
-                    Whiskers
-                    Adapted from 
-                                Coding Cat Adventures
-                            
-                        
-                            
-                                Cat Stories:
-                            Once upon a time in a land of laptops and code, there lived a mischievous cat that loved milk and H2O named Whiskers. Whiskers, a coding cat, built websites with HTML, styled them with CSS, and added interactive elements with JavaScript.
-                        
-                            Whiskers' Favorite Quote:
-                            Meow
-                        
-                            Tools of the Trade
-                            
-                                
-                                    HTML
-                                    structure
-                                    CSS
-                                    styling
-                                    JavaScript
-                                    interactivity
-                                
-                            
-                        
-                        
-                            Published on 2022-01-01
-                            
-                                Follow us on Social Media
-            </textarea>
-            <textarea class="language-css">
-
-                .a {
-                    height: 100%;
-                    border: 2px solid var(--color-primary);
-                    padding: 2rem;
-                    border-radius: 1rem;
-                }
-
-                h1, p, h2 {
-                    text-align: left;
-                }
-
-                h1,{
-                    color: var(--color-primary);
-                    font-size: 4rem;
-                    line-height: 1;
-                    margin-bottom: 2rem;
-                }
-
-                h2 {
-                    color: var(--color-gold);
-                    font-size: 1.8rem;
-                }
-
-                em {
-                    color: var(--color-primary);
-                    font-size: 2rem;
-                    font-weight: bold;
-                }
 
 
-                dl {
-                    font-size: 1rem;
-                }
-
-                p {
-                    color: var(--color-white);
-                    font-size: 2rem;
-                }
-
-                cite {
-                    color: var(--color-primary);
-                    font-size: 1.5rem;
-                }
-
-                small {
-                    color: var(--color-primary);
-                    font-size: .8rem;
-                }
-
-                
-            </textarea>
-        </article>
-    </section>
-    <section>
-        <header class="slide chapter">
-            <h1>Lets Swith now to <span class="accent">HTML</span></h1>
-        </header>
-        
         <article class="slide" title="What is HTML Semantics">
             <div class="logo"></div>
-            <p class="small-text">What is HTML</p>
-            <div class="content-with-image">
-                <div class="content-text">
-                    <p>Just like a Marker</p>
-                    <p>We use to emphasize parts of a page</p>
-                    <p class="delayed">
-                        and try to give it a <span class="accent">meaning</span>
-                    </p>
-                </div>
+            <p class="small-text">Importance of HTML Semantics</p>
+            <div class="content">
+                <h1>Why is it Important</h1>
+                <ul class="content-list delayed-children">
+                    <li>Great for SEO</li>
+                    <li>Crucial Accessibility</li>
+                    <li>Very nice for the Developer to work with</li>
+                </ul>
                 <figure class="content-image">
                     <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
-                    <img src="./assests/images/html-idea.webp" alt="Meaning" />
+                    <img src="assests/images/spider.webp" alt="Meaning" />
                 </figure>
             </div>
         </article>
-        <article class="slide" title="What is HTML Semantics">
-            <div class="logo"></div>
-            <p class="small-text">What is HTML</p>
-            <div class="content-with-image">
-                <div>
-                    <p>
-                        <span class="">Markup language</span>
-                    </p>
-                </div>
-                <figure class="content-image">
-                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
-                    <img src="./assests/images/html-document.jpg" alt="Meaning" />
-                </figure>
-            </div>
-        </article>
-        <article class="slide" title="What is HTML Semantics">
-            <div class="logo"></div>
-            <p class="small-text">What is HTML</p>
-            <div class="content-with-image">
-                <div>
-                    <p>
-                        HTML stands for
-                        <span class="accent">'HyperText Markup Language'</span>
-                    </p>
-                </div>
-                <figure class="content-image">
-                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
-                    <img src="./assests/images/html-document.jpg" alt="Meaning" />
-                </figure>
-            </div>
-        </article>
-        <article class="slide" title="What is HTML Semantics">
-            <div class="logo"></div>
-            <p class="small-text">HTML Origin</p>
-            <div class="content-with-image">
-                <dl class="data-list delayed-children">
-                    <dt>Creator</dt>
-                    <dd>Tim Berners-Lee</dd>
-                    <dt>The year</dt>
-                    <dd>first introduced in 1991, first introduced</dd>
-                    <dt>Developed at</dt>
-                    <dd>CERN (European Organization for Nuclear Research)</dd>
-                </dl>
-                <figure class="content-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/CERN_Globe_of_Science_and_Innovation.jpg/1280px-CERN_Globe_of_Science_and_Innovation.jpg"
-                        alt="Meaning" />
-                    <figcaption>The Globe of Science and Innovation at CERN</figcaption>
-                </figure>
-            </div>
+        <article class="slide" data-insert="#semantic-text"></article>
+        <article class="slide" data-insert="#unsemantic-text">
         </article>
     </section>
     <section>
         <header class="slide chapter">
             <h1>
-                HTML Semantics,<br />
-                Lets <span class="accent">Mark up</span> some text
+                HTML
+                <span class="accent">Semantic Structure</span>
             </h1>
         </header>
-        <article class="demo slide" id="livedemo">
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">Semantic Structure</p>
+            <div class="content">
+                <h1>Just like the structure of a house</h1>
+                <p>we want to communicate the structure of a website to the browser <span class="accent delayed">and to
+                        the
+                        developer</span></p>
+                <figure class="content-image">
+                    <img src="./assests/images/tiny-house.avif" alt="HTML5" />
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">HTML Elements & Tags</p>
+            <div class="content-with-image">
+                <dl class="data-list">
+                    <dt>&lt;address&gt;</dt>
+                    <dd>Contact Information, Street Address or, Social Media</dd>
+                    <dt>&lt;article&gt;</dt>
+                    <dd>Text Content, Media Content</dd>
+                    <dt>&lt;aside&gt;</dt>
+                    <dd>Indirect related content</dd>
+                    <dt>&lt;footer&gt;</dt>
+                    <dd>Contains links, contact info</dd>
+                    <dt>&lt;header&gt;</dt>
+                    <dd>Contains introductory content, and main navigation</dd>
+                    <dt>&lt;main&gt;</dt>
+                    <dd>Main content of the page, 1 or more articles</dd>
+                    <dt>&lt;nav&gt;</dt>
+                    <dd>Contains navigation links</dd>
+                    <dt>&lt;section&gt;</dt>
+                    <dd>Standalone portion of a document</dd>
+                </dl>
+            </div>
+        </article>
+        <article class="demo slide">
             <textarea class="language-html">
                 <div class="semantic-structure">
                     <header>Header</header>
@@ -503,224 +579,85 @@
                 .semantic-structure {
                     width: 100%;
                     height: 100vh;
-
-                    display: grid;
-                    grid-template-areas: 
-                        "header header header"
-                        "aside main main"
-                        "aside main main"
-                        "footer footer footer";
                 }
                 header {
-                    grid-area: header;
                     background-color: var(--color-primary);
                 }
                 main {
-                    grid-area: main;
+                    height: 70vh;
                     background-color: var(--color-dark);
                 }
                 aside {
-                    grid-area: aside;
                     background-color: var(--color-yellow);
                 }
                 footer {
-                    grid-area: footer;
                     background-color: var(--color-blue);
                 }
             </textarea>
         </article>
+
         <article class="slide" title="What is HTML Semantics">
             <div class="logo"></div>
             <p class="small-text">HTML Semantics</p>
             <div class="content">
-                <h1>HTML Semantics</h1>
-                <ul class="content-list delayed-children">
-                    <li>
-                        HTML5 introduced a more precise way to define the meaning of
-                        content
-                    </li>
-                    <li>It introduced a lot of new elements</li>
-                    <li>It also redefined some existing elements</li>
-                    <li>It also removed some elements</li>
-                </ul>
-                <figure class="content-image">
-                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5" />
-                </figure>
-            </div>
+                <div class="story item-center">
+                    <p> <span class="lemon">Easy peasy lemon squeezy</span> we use tags and give meaning.
+                        <span class="delayed accent">But why is it still challenging</span>
+                    </p>
         </article>
-        <article class="slide" title="What is HTML Semantics">
-            <div class="logo"></div>
-            <p class="small-text">HTML Semantics</p>
-            <div class="content">
-                <h1>HTML Semantics</h1>
-                <ul class="content-list delayed-children">
-                    <li>
-                        HTML5 introduced a more precise way to define the meaning of
-                        content
-                    </li>
-                    <li>It introduced a lot of new elements</li>
-                    <li>It also redefined some existing elements</li>
-                    <li>It also removed some elements</li>
-                </ul>
-                <figure class="content-image">
-                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5" />
-                </figure>
-            </div>
-        </article>
-
-        <!-- <article class="slide">
-            <h1>History</h1>
-            <ul>
-                <li>Originally created in 2010 for my first talk, at <a href="http://front-trends.com">Front Trends
-                        2010</a></li>
-                <li>By popular demand, it was released shortly after, named CSSS</li>
-                <li>Huge refactor and renaming to Inspire.js in Sep 2018</li>
-            </ul>
-        </article>
-
-        <article class="slide">
-            <h1>Syntax</h1>
-
-            <ul>
-                <li>Slides are defined by adding the <code>slide</code> class to any elements.</li>
-                <li><code>&lt;header class="slide"></code> is a header slide (relevant for the <a
-                        href="#overview">Overview</a>)</li>
-            </ul>
-        </article>
-
-        <article class="slide" id="navigation">
-            <h1>Keyboard Navigation</h1>
-            <ul>
-                <li><kbd>→</kbd> or <kbd>↓</kbd> to advance to the next slide or incrementally displayed item</li>
-                <li><kbd>←</kbd> or <kbd>↑</kbd> to go to the previous slide or incrementally displayed item</li>
-                <li><kbd>Ctrl</kbd><kbd>→</kbd> or <kbd>Ctrl</kbd><kbd>↓</kbd> to jump to the next slide</li>
-                <li><kbd>Ctrl</kbd><kbd>←</kbd> or <kbd>Ctrl</kbd><kbd>↑</kbd> to jump to the previous slide</li>
-                <li>Home to go to the first slide, End to go to the last</li>
-                <li><kbd>Ctrl</kbd><kbd>G</kbd> to jump to an arbitrary slide (by slide number or identifier)</li>
-                <li class="delayed">
-                    Note that if a slide contains an <code>&lt;iframe</code>, when the content in the iframe is focused,
-                    Inspire.js shortcuts will not work.
-                    There is no way around that, you need to click on something from the actual slide to get focus out
-                    of the iframe before you use any Inspire.js keyboard shortcuts.
-                    Some plugins (e.g. live demo) add on-screen "Next" buttons for this reason.
-                </li>
-            </ul>
-        </article>
-         -->
     </section>
-    <!-- <section>
-      <article class="slide" title="Inspire.js: Introduction">
-        <div class="logo"></div>
-
-        <p class="small-text">Game time</p>
-        <div>
-          <h1 class="heading">Guess the character</h1>
-          <div class="game-list-wrapper delayed-children">
-            <ul class="game-list">
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Game 1"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Game 2"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Game 3"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/3772616/pexels-photo-3772616.jpeg?auto=compress&cs=tinysrgb&w=600assets/images/game4.jpg"
-                  alt="Game 4"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </section>
-
     <section>
-      <article class="slide" title="Inspire.js: Introduction">
-        <h1>Main idea</h1>
+        <header class="slide chapter">
+            <h1>Welcome <span class="accent">CSS GRID</span></h1>
+        </header>
+        <!-- <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">CSS with no Grid</p>
+            <div class="content">
+                <h1>Back in the days</h1>
+                <p>it was a pain in the <span class="accent">neck</span> to create a web layout</p>
+                <figure class="content-image">
+                    <img src="assests/images/div-soup.webp" />
+                    <figcaption>Div Soup</figcaption>
+                </figure>
+            </div>
+        </article> -->
 
-        <ul class="delayed-children">
-          <li>An HTML file contains the whole presentation</li>
-          <li>Themes as CSS files</li>
-          <li>Plugins for extra functionality, autoloaded when used</li>
-          <li>Nice JavaScript API for really custom things</li>
-        </ul>
-      </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">CSS with no Grid</p>
+            <div class="content">
+                <h1>Tools for layouts </h1>
+                <ul class="content-list delayed-children">
+                    <li>Tables</li>
+                    <li>Floats</li>
+                    <li>Flexbox, <span class="delayed">Bootstrap Layouts</span></li>
+                    <li>Grid</li>
+                </ul>
+                <figure class="content-image">
+                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
+                    <img src="assests/images/sponge.png" alt="Meaning" />
+                    <figcaption>CSS Floats</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="slide" title="What is HTML Semantics">
+            <div class="logo"></div>
+            <p class="small-text">CSS with no Grid</p>
+            <div class="content">
+                <h1>Using the older tools was challenging</h1>
+                <ul class="content-list delayed-children">
+                    <li>they where a nightmare to maintain</li>
+                    <li>they where not responsive</li>
+                    <li>it creates a div soup</li>
+                </ul>
+                <figure class="content-image">
+                    <!-- <img src="https://webcraftjourney.files.wordpress.com/2013/04/html-by-hand.jpg" alt="Meaning"> -->
+                    <img src="assests/images/div-soup.webp" alt="Meaning" />
+                </figure>
+            </div>
+        </article>
 
-      <article class="slide">
-        <h1>History</h1>
-        <ul>
-          <li>
-            Originally created in 2010 for my first talk, at
-            <a href="http://front-trends.com">Front Trends 2010</a>
-          </li>
-          <li>By popular demand, it was released shortly after, named CSSS</li>
-          <li>Huge refactor and renaming to Inspire.js in Sep 2018</li>
-        </ul>
-      </article>
-
-      <article class="slide">
-        <h1>Syntax</h1>
-
-        <ul>
-          <li>
-            Slides are defined by adding the <code>slide</code> class to any
-            elements.
-          </li>
-          <li>
-            <code>&lt;header class="slide"></code> is a header slide (relevant
-            for the <a href="#overview">Overview</a>)
-          </li>
-        </ul>
-      </article>
-
-      <article class="slide" id="navigation">
-        <h1>Keyboard Navigation</h1>
-        <ul>
-          <li>
-            <kbd>→</kbd> or <kbd>↓</kbd> to advance to the next slide or
-            incrementally displayed item
-          </li>
-          <li>
-            <kbd>←</kbd> or <kbd>↑</kbd> to go to the previous slide or
-            incrementally displayed item
-          </li>
-          <li>
-            <kbd>Ctrl</kbd><kbd>→</kbd> or <kbd>Ctrl</kbd><kbd>↓</kbd> to jump
-            to the next slide
-          </li>
-          <li>
-            <kbd>Ctrl</kbd><kbd>←</kbd> or <kbd>Ctrl</kbd><kbd>↑</kbd> to jump
-            to the previous slide
-          </li>
-          <li>Home to go to the first slide, End to go to the last</li>
-          <li>
-            <kbd>Ctrl</kbd><kbd>G</kbd> to jump to an arbitrary slide (by slide
-            number or identifier)
-          </li>
-          <li class="delayed">
-            Note that if a slide contains an <code>&lt;iframe</code>, when the
-            content in the iframe is focused, Inspire.js shortcuts will not
-            work. There is no way around that, you need to click on something
-            from the actual slide to get focus out of the iframe before you use
-            any Inspire.js keyboard shortcuts. Some plugins (e.g. live demo) add
-            on-screen "Next" buttons for this reason.
-          </li>
-        </ul>
-      </article>
-      -->
     </section>
 
     <script src="https://inspirejs.org/inspire.mjs" type="module"></script>

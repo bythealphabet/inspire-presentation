@@ -9,8 +9,7 @@
 }
 
 .slide {
-  --column-grid: minmax(1.5rem, 1fr) repeat(6, minmax(30px, 125px))
-    minmax(1.5rem, 1fr);
+  --column-grid: minmax(1.5rem, 1fr) repeat(6, minmax(30px, 125px)) minmax(1.5rem, 1fr);
   --row-grid: 50px 50px auto 50px;
   padding: 0;
   display: grid;
@@ -18,7 +17,7 @@
   grid-template-rows: var(--row-grid);
   line-height: 1.6;
 
-  > * {
+  >* {
     grid-column: 2 / -2;
   }
 
@@ -103,7 +102,6 @@
 
     em,
     .accent {
-      display: block;
       color: var(--color-accent-1);
     }
 
@@ -181,12 +179,19 @@
       justify-self: end;
     }
   }
+
+  .semantics {
+    display: block;
+  }
+
+  .lemon {
+    color: rgb(76, 161, 76);
+  }
 }
 
 @media (min-width: 900px) {
   .slide {
-    --column-grid: minmax(2rem, 1fr) repeat(12, minmax(50px, 125px))
-      minmax(2rem, 1fr);
+    --column-grid: minmax(2rem, 1fr) repeat(12, minmax(50px, 125px)) minmax(2rem, 1fr);
     --row-grid: 100px 50px auto 100px;
 
     .hero {
@@ -222,12 +227,11 @@
     .content-with-image {
       flex-flow: row wrap;
 
-      > * {
+      >* {
         flex-basis: 45%;
       }
 
       .content-image {
-        height: 400px;
         flex-basis: 45%;
         align-self: start;
         justify-self: end;
@@ -244,6 +248,7 @@
         grid-template-columns: 0.5fr 2fr;
         gap: 2rem;
 
+
         dt {
           font-weight: bold;
         }
@@ -256,13 +261,55 @@
 
     .content {
       h1 {
+        grid-column: 2 / 7;
         font-size: 3.5rem;
       }
 
+      .story {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+        grid-column: 2 / -2;
+        grid-row: 3;
+        font-size: 6rem;
+      }
+
+      h3 {
+        grid-column: 2 / -5;
+        grid-row: 2;
+      }
+
+      p {
+        grid-column: 2 / 6;
+        grid-row: 4;
+      }
+
       .content-list {
+        list-style: initial;
+        grid-column: 2 / 7;
         grid-row: 3 / -1;
         gap: 2rem;
         align-self: center;
+
+        .tag {
+          margin-right: 4rem;
+        }
+      }
+
+      .data-list {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        gap: 1rem;
+        font-size: 3rem;
+
+
+        dt {
+          font-weight: bold;
+        }
+
+        dd {
+          margin: 0;
+        }
       }
 
       .game-list {
@@ -282,10 +329,33 @@
       }
 
       .content-image {
-        grid-column: 3 / -2;
+        grid-column: 8 / -2;
         grid-row: 1 / -1;
         align-self: start;
         justify-self: end;
+        overflow: hidden;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        img {
+          flex-basis: 100%;
+          width: 100%;
+          object-fit: cover;
+
+        }
+      }
+
+      .story.content-image {
+        grid-column: 2 / -2;
+        grid-row: 4;
+        align-self: start;
+        justify-self: start;
+      }
+
+      .item-center {
+        align-self: center;
+        justify-self: center;
       }
     }
   }
